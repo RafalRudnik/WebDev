@@ -1,0 +1,147 @@
+@keyframes goArround {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-padding-top: 82px;
+}
+
+body {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+}
+
+nav {
+  transition: bacground-color 0.4s;
+  z-index: 5;
+}
+nav .fa-bars {
+  padding: 10px;
+  color: white;
+}
+nav .logo {
+  width: 150px;
+}
+nav .navbar-nav .nav-link.active,
+nav .nav-link:focus {
+  color: #e088ff;
+}
+nav .navbar-nav .nav-link {
+  color: white;
+  text-transform: uppercase;
+  transition: color 0.3s;
+  text-shadow: 0px 4px 9px #040404;
+}
+nav .navbar-nav .nav-link:hover {
+  color: #e088ff;
+}
+nav .navbar-brand {
+  padding: 20px;
+}
+
+.nav-shadow {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  background-image: url("../img/heroDev-sm.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 0;
+}
+header .span-green {
+  color: #4ddd4a;
+}
+header .span-purple {
+  color: #e088ff;
+}
+header h1 {
+  padding: 10px;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 2px;
+  text-shadow: 0px 4px 9px #040404;
+}
+header h2 {
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 10px 0px;
+}
+header p {
+  color: #b8b8b8;
+  font-size: 14px;
+}
+header a {
+  text-decoration: none;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+.aboutus {
+  height: 700px;
+}
+
+@media (min-width: 992px) {
+  header {
+    background-image: url("../img/heroDev-big.jpeg");
+    overflow: hidden;
+  }
+  header .circle {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -20%;
+    bottom: 10%;
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    border: 5px dotted #e088ff;
+    opacity: 0.2;
+    animation: goArround 60s 0s infinite linear forwards;
+  }
+  header .circle .fa-terminal {
+    font-size: 470px;
+    color: #e088ff;
+  }
+}
+@media (min-width: 776px) {
+  header h1 {
+    font-size: 48px;
+  }
+  header h2 {
+    font-size: 36px;
+    letter-spacing: 2px;
+    text-shadow: 0px 4px 9px #040404;
+  }
+  header p {
+    font-size: 28px;
+    letter-spacing: 2px;
+    text-shadow: 0px 4px 9px #040404;
+  }
+}/*# sourceMappingURL=style.css.map */
