@@ -10,6 +10,10 @@ document.addEventListener('DOMContentLoaded', function () {
 			nav.classList.remove('nav-shadow');
 		}
 	};
+	const closeBurger = () => {
+		burgerMenu.classList.remove('show');
+	};
 
+	allLinks.forEach((link) => link.addEventListener('click', closeBurger));
 	window.addEventListener('scroll', addShadow);
 });

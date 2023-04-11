@@ -15,12 +15,18 @@
 }
 
 html {
-  scroll-padding-top: 82px;
+  scroll-padding-top: 135px;
 }
 
 body {
   position: relative;
   font-family: "Montserrat", sans-serif;
+  background-color: rgba(126, 122, 122, 0.202);
+}
+
+h2 {
+  text-transform: uppercase;
+  text-shadow: 0px 0px 4px #c16bce;
 }
 
 nav {
@@ -39,13 +45,28 @@ nav .nav-link:focus {
   color: #e088ff;
 }
 nav .navbar-nav .nav-link {
+  position: relative;
   color: white;
   text-transform: uppercase;
   transition: color 0.3s;
   text-shadow: 0px 4px 9px #040404;
 }
+nav .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #e088ff;
+  transform: scale(0);
+  transition: transform 0.6s;
+}
 nav .navbar-nav .nav-link:hover {
   color: #e088ff;
+}
+nav .navbar-nav .nav-link:hover::after {
+  transform: scale(1);
 }
 nav .navbar-brand {
   padding: 20px;
@@ -102,8 +123,50 @@ header::after {
   z-index: -1;
 }
 
-.aboutus {
-  height: 700px;
+.aboutus .about-desc {
+  color: #4b4a4a;
+}
+.aboutus i {
+  font-size: 60px;
+  padding: 15px;
+  color: #552866;
+  text-shadow: 0px 2px 2px #040404;
+}
+.aboutus .technology {
+  position: relative;
+  background-image: url("../img/purple-sm.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 1;
+}
+.aboutus .technology .aboutus-tech {
+  color: #b8b8b8;
+}
+.aboutus .technology .row {
+  text-align: center;
+}
+.aboutus .technology .row i {
+  font-size: 60px;
+  color: white;
+  text-shadow: 0px 4px 9px #040404;
+  transition: transform 0.4s;
+}
+.aboutus .technology .row i:hover {
+  transform: scale(1.2);
+}
+.aboutus .technology .row p {
+  color: #b8b8b8;
+}
+.aboutus .technology::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
 }
 
 @media (min-width: 992px) {
@@ -128,6 +191,9 @@ header::after {
   header .circle .fa-terminal {
     font-size: 470px;
     color: #e088ff;
+  }
+  .technology {
+    background-image: url("../img/purple-big.jpeg");
   }
 }
 @media (min-width: 776px) {
