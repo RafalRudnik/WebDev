@@ -20,8 +20,9 @@ body {
 }
 
 h2 {
+	font-weight: bold;
 	text-transform: uppercase;
-	text-shadow: 0px 0px 4px #c16bce;
+	text-shadow: px 1px 2px #939194;
 }
 
 h5 {
@@ -143,6 +144,10 @@ header::after {
 		text-shadow: 0px 2px 2px #040404;
 	}
 
+	.about-title {
+		color: $purple-dark;
+	}
+
 	.technology {
 		position: relative;
 		background-image: url('../img/purple-sm.jpeg');
@@ -178,30 +183,12 @@ header::after {
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-color: rgba(0, 0, 0, 0.4);
+		background-color: rgba(0, 0, 0, 0.7);
 		z-index: -1;
 	}
 }
 
 .prices {
-	// .prices-bg {
-	// 	position: relative;
-	// 	background-image: url(../img/purple-sm.jpeg);
-	// 	background-size: cover;
-	// 	background-attachment: fixed;
-	// 	z-index: 1;
-	// }
-	// .prices-bg::after {
-	// 	content: '';
-	// 	position: absolute;
-	// 	top: 0;
-	// 	left: 0;
-	// 	width: 100%;
-	// 	height: 100%;
-	// 	background-color: rgba(0, 0, 0, 0.5);
-	// 	z-index: -1;
-	// }
-
 	.card {
 		height: 550px;
 		border-radius: 15px;
@@ -217,9 +204,9 @@ header::after {
 				transform: translateX(-50%);
 				width: 100%;
 				border-radius: 0px;
+				cursor: auto;
 			}
 		}
-		
 	}
 	.card:hover {
 		transform: scale(1.03);
@@ -236,6 +223,40 @@ header::after {
 			padding: 10px 0px;
 		}
 	}
+}
+
+.contact {
+	position: relative;
+	background-image: url('../img/purple-sm.jpeg');
+	background-size: cover;
+	background-attachment: fixed;
+	z-index: 1;
+	color: $txt-grey;
+	h5 {
+		letter-spacing: 2px;
+		margin-bottom: 40px;
+	}
+	i {
+		padding: 10px;
+		font-size: 20px;
+	}
+	p {
+		padding: 10px;
+		letter-spacing: 2px;
+	}
+	.section-title {
+		color: $main-color;
+	}
+}
+.contact::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: -1;
 }
 
 @media (min-width: 992px) {
@@ -262,6 +283,9 @@ header::after {
 		overflow: hidden;
 	}
 	.technology {
+		background-image: url('../img/purple-big.jpeg');
+	}
+	.contact {
 		background-image: url('../img/purple-big.jpeg');
 	}
 }
