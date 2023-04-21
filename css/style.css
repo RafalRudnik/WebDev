@@ -46,7 +46,7 @@ html {
 body {
   position: relative;
   font-family: "Montserrat", sans-serif;
-  background-color: rgba(206, 203, 203, 0.202);
+  background-color: rgb(255, 253, 253);
 }
 
 h2 {
@@ -81,22 +81,8 @@ nav .navbar-nav .nav-link {
   transition: color 0.3s;
   text-shadow: 0px 4px 9px #040404;
 }
-nav .nav-link::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 3px;
-  width: 100%;
-  background-color: #e088ff;
-  transform: scale(0);
-  transition: transform 0.6s;
-}
 nav .navbar-nav .nav-link:hover {
   color: #e088ff;
-}
-nav .navbar-nav .nav-link:hover::after {
-  transform: scale(1);
 }
 nav .navbar-brand {
   padding: 20px;
@@ -166,15 +152,15 @@ header::after {
 .aboutus i {
   font-size: 60px;
   margin: 26px 0px;
-  color: #552866;
+  color: #4b4a4a;
   text-shadow: 0px 2px 2px #040404;
 }
 .aboutus .about-title {
-  color: #552866;
+  color: black;
 }
 .aboutus .technology {
   position: relative;
-  background-image: url("../img/purple-sm.jpeg");
+  background-image: url("../img/footer-sm-2.jpeg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -206,8 +192,43 @@ header::after {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   z-index: -1;
+}
+
+.portfolio {
+  margin-bottom: 40px;
+  z-index: 0;
+}
+.portfolio__desc {
+  align-self: flex-start;
+  width: 100%;
+}
+.portfolio__card {
+  position: relative;
+  border-radius: 8px;
+  z-index: 0;
+  width: 100%;
+  height: 400px;
+  background-image: url("../img/transport-sm.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+.portfolio__card--two {
+  background-image: url("../img/restaurant-sm.jpeg");
+}
+.portfolio__card--two::after {
+  position: absolute;
+  content: "";
+  top: -50px;
+  left: -10px;
+  width: 40%;
+  height: 30%;
+  background-color: rgba(94, 23, 217, 0.767);
+  z-index: -2;
+}
+.portfolio__card--three {
+  background-image: url("../img/free-sm.jpeg");
 }
 
 .prices .card {
@@ -246,7 +267,7 @@ header::after {
 
 .contact {
   position: relative;
-  background-image: url("../img/purple-sm.jpeg");
+  background-image: url("../img/purple-sm-2.jpeg");
   background-size: cover;
   background-attachment: fixed;
   z-index: 1;
@@ -259,6 +280,7 @@ header::after {
 .contact i {
   padding: 10px;
   font-size: 20px;
+  color: white;
 }
 .contact p {
   padding: 10px;
@@ -266,6 +288,11 @@ header::after {
 }
 .contact .section-title {
   color: white;
+}
+.contact .footer {
+  position: absolute;
+  bottom: 0;
+  font-size: 10px;
 }
 
 .contact::after {
@@ -302,11 +329,35 @@ header::after {
     font-size: 470px;
     color: #e088ff;
   }
-  .technology {
-    background-image: url("../img/purple-big.jpeg");
+  nav .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #e088ff;
+    transform: scale(0);
+    transition: transform 0.6s;
+  }
+  nav .navbar-nav .nav-link:hover::after {
+    transform: scale(1);
+  }
+  .aboutus .technology {
+    background-image: url("../img/footer-big-3.jpeg");
   }
   .contact {
-    background-image: url("../img/purple-big.jpeg");
+    background-image: url("../img/purple-big-2.jpeg");
+    height: 600px;
+    overflow: hidden;
+  }
+  .section-title {
+    margin-bottom: 30px;
+  }
+  .contact__div {
+    width: 100%;
+    height: 300px;
+    padding: 80px 0px;
   }
 }
 @media (min-width: 776px) {
@@ -322,5 +373,11 @@ header::after {
     font-size: 28px;
     letter-spacing: 2px;
     text-shadow: 0px 4px 9px #040404;
+  }
+  .portfolio__desc {
+    width: 45%;
+  }
+  .portfolio__card {
+    width: 45%;
   }
 }/*# sourceMappingURL=style.css.map */

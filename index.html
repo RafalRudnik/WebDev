@@ -151,12 +151,36 @@
 			</div>
 		</section>
 
-		<section id="portfolio" class="portfolio">
+		<section id="portfolio">
 			<div class="container py-5">
 				<div class="section-title py-5 text-center">
 					<h2>portfolio</h2>
 				</div>
-				
+				<div class="portfolio d-flex flex-column flex-md-row justify-content-around align-items-center gap-5 py-5">
+					<div class="portfolio__desc" data-aos="fade-right" data-aos-delay="200">
+						<h4 class="pb-4">Dla transportu</h4>
+						<p>Pokaż się klientom z nowoczesnej strony. Popraw zaufanie do swojej firmy, dzięki obecności w seci</p>
+					</div>
+					<div class="portfolio__card" data-aos="fade-left" data-aos-delay="300">
+						
+					</div>
+				</div>
+				<div class="portfolio d-flex flex-column flex-md-row justify-content-around align-items-center gap-5 py-5">
+					<div class="portfolio__card portfolio__card--two" data-aos="fade-right" data-aos-delay="400">
+						
+					</div>
+					<div class="portfolio__desc" data-aos="fade-left" data-aos-delay="400">
+						<h4 class="pb-4">Dla restauracji</h4>
+					</div>
+				</div>
+				<div class="portfolio d-flex flex-column flex-md-row justify-content-around align-items-center gap-5 py-5">
+					<div class="portfolio__desc" data-aos="fade-right" data-aos-delay="500">
+						<h4 class="pb-4">Dla restauracji</h4>
+					</div>
+					<div class="portfolio__card portfolio__card--three" data-aos="fade-left" data-aos-delay="600">
+						
+					</div>
+				</div>
 			</div>
 		</section>
 
@@ -168,34 +192,37 @@
 			<div class="container-fluid prices-bg">
 				<div class="container py-5">
 					<div class="row justify-content-center">
-						<div class="col-8 col-sm-8 col-md-6 col-lg-6 col-xl-3 text-center p-3" data-aos="flip-left" data-aos-delay="400">
+						<div class="col-10 col-sm-10 col-md-6 col-lg-6 col-xl-3 text-center p-3" data-aos="flip-left"
+							data-aos-delay="400">
 							<div class="card shadow">
 								<div class="card-body">
 									<h5 class="card-title mb-5 p-4">Mini:</h5>
 									<p class="card-text">Projekt</p>
 									<p class="card-text">Wykonanie</p>
-									<p class="btn btn-light fs-3">3000 zł</p>
+									<p class="btn btn-light fs-3">2000 zł</p>
 								</div>
 							</div>
 						</div>
-						<div class="col-8 col-sm-8 col-md-6 col-lg-6 col-xl-3 text-center p-3" data-aos="flip-left" data-aos-delay="600">
+						<div class="col-10 col-sm-10 col-md-6 col-lg-6 col-xl-3 text-center p-3" data-aos="flip-left"
+							data-aos-delay="600">
 							<div class="card shadow">
 								<div class="card-body">
 									<h5 class="card-title mb-5 p-4">Standard:</h5>
 									<p class="card-text">Projekt</p>
-									<p class="card-text">Wykonanie strony</p>
+									<p class="card-text">Wykonanie</p>
 									<p class="card-text">Umieszczenia na serwerze</p>
 									<p class="card-text">Domena na 12 msc.</p>
 									<p class="btn btn-light fs-3">4000 zł</p>
 								</div>
 							</div>
 						</div>
-						<div class="col-8 col-sm-8 col-md-6 col-lg-6 col-xl-3 text-center p-3" data-aos="flip-left" data-aos-delay="800">
+						<div class="col-10 col-sm-10 col-md-6 col-lg-6 col-xl-3 text-center p-3" data-aos="flip-left"
+							data-aos-delay="800">
 							<div class="card shadow card-active">
 								<div class="card-body">
 									<h5 class="card-title mb-5 p-4">Zalecany:</h5>
 									<p class="card-text">Projekt</p>
-									<p class="card-text">Wykonanie strony</p>
+									<p class="card-text">Wykonanie</p>
 									<p class="card-text">Umieszczenie na serwerze</p>
 									<p class="card-text">Domena</p>
 									<p class="card-text">Aktualizacja treści do 2x msc</p>
@@ -204,12 +231,13 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-8 col-sm-8 col-md-6 col-xl-3 text-center p-3" data-aos="flip-left" data-aos-delay="1000">
+						<div class="col-10 col-sm-10 col-md-6 col-xl-3 text-center p-3" data-aos="flip-left"
+							data-aos-delay="1000">
 							<div class="card shadow">
 								<div class="card-body">
 									<h5 class="card-title mb-5 p-4">Indywidualny:</h5>
 									<p class="card-text">Projekt</p>
-									<p class="card-text">Wykonanie strony</p>
+									<p class="card-text">Wykonanie</p>
 									<p class="card-text">Umieszczenie na serwerze</p>
 									<p class="card-text">Domena</p>
 									<p class="card-text">Aktualizacja bez ograniczeń</p>
@@ -227,17 +255,22 @@
 			</div>
 		</section>
 
-		<section class="contact text-center" id="contact">
+		<section class="contact text-center pb-5 d-flex flex-column align-items-center" id="contact">
 			<div class="section-title py-5 text-center">
 				<h2>kontakt</h2>
 			</div>
-			<h5>BNC Rafał R.</h5>
-			<p><i class="fa-solid fa-location-dot"></i> Obrońców  Wybrzeża 3A, <br>80-398 Gdańsk</p>
-			<p>
-				<i class="fa-brands fa-discord"></i> Infamous#0621
-			</p>
-			<p> <i class="fa-regular fa-envelope"></i> rafal@bnc-web.pl</p>
-			
+			<div class="container contact__div d-flex flex-column flex-md-row justify-content-evenly">
+
+				<p data-aos="zoom-in" data-aos-delay="200"><i class="fa-solid fa-location-dot"></i>
+					BNC Rafał Rudnik <br>Obrońców Wybrzeża 3A, <br>80-398 Gdańsk</p>
+				<p data-aos="zoom-in" data-aos-delay="400">
+					<i class="fa-brands fa-discord"></i> Infamous#0621
+				</p>
+				<p data-aos="zoom-in" data-aos-delay="600"> <i class="fa-regular fa-envelope"></i> rafal@bnc-web.pl</p>
+			</div>
+
+			<p class="footer">&copy; BNC Rafał Rudnik, <a href="https://www.freepik.com/free-vector/waiters-concept-illustration_9233803.htm#query=restaurant&position=29&from_view=search&track=sph">Image by storyset</a> on Freepik</p>
+
 		</section>
 	</main>
 

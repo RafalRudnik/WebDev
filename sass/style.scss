@@ -48,23 +48,20 @@ nav {
 		transition: color 0.3s;
 		text-shadow: 0px 4px 9px #040404;
 	}
-	.nav-link::after {
-		content: '';
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		height: 3px;
-		width: 100%;
-		background-color: $purple-color;
-		transform: scale(0);
-		transition: transform 0.6s;
-	}
+	// .nav-link::after {
+	// 	content: '';
+	// 	position: absolute;
+	// 	bottom: 0;
+	// 	left: 0;
+	// 	height: 3px;
+	// 	width: 100%;
+	// 	background-color: $purple-color;
+	// 	transform: scale(0);
+	// 	transition: transform 0.6s;
+	// }
 
 	.navbar-nav .nav-link:hover {
 		color: $purple-color;
-	}
-	.navbar-nav .nav-link:hover::after {
-		transform: scale(1);
 	}
 
 	.navbar-brand {
@@ -140,17 +137,17 @@ header::after {
 	i {
 		font-size: 60px;
 		margin: 26px 0px;
-		color: $purple-dark;
+		color: $txt-grey-dark;
 		text-shadow: 0px 2px 2px #040404;
 	}
 
 	.about-title {
-		color: $purple-dark;
+		color: $txt-blac;
 	}
 
 	.technology {
 		position: relative;
-		background-image: url('../img/purple-sm.jpeg');
+		background-image: url('../img/footer-sm-2.jpeg');
 		background-position: center;
 		background-size: cover;
 		background-attachment: fixed;
@@ -183,8 +180,58 @@ header::after {
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-color: rgba(0, 0, 0, 0.7);
+		background-color: rgba(0, 0, 0, 0.8);
 		z-index: -1;
+	}
+}
+
+// ============ PORTFOLIO
+
+.portfolio {
+	margin-bottom: 40px;
+	z-index: 0;
+
+	&__desc {
+		align-self: flex-start;
+		width: 100%;
+	}
+
+	&__card {
+		position: relative;
+		border-radius: 8px;
+		// overflow: hidden;
+		z-index: 0;
+		width: 100%;
+		height: 400px;
+		background-image: url('../img/transport-sm.jpeg');
+		background-position: center;
+		background-size: cover;
+		// &::after {
+		// 	position: absolute;
+		// 	content: '';
+		// 	top: -50px;
+		// 	left: -10px;
+		// 	width: 40%;
+		// 	height: 30%;
+		// 	background-color: rgba(94, 23, 217, 0.767);
+		// 	z-index: -2;
+		// }
+		&--two {
+			background-image: url('../img/restaurant-sm.jpeg');
+			&::after {
+				position: absolute;
+				content: '';
+				top: -50px;
+				left: -10px;
+				width: 40%;
+				height: 30%;
+				background-color: rgba(94, 23, 217, 0.767);
+				z-index: -2;
+			}
+		}
+		&--three {
+			background-image: url('../img/free-sm.jpeg');
+		}
 	}
 }
 
@@ -227,7 +274,7 @@ header::after {
 
 .contact {
 	position: relative;
-	background-image: url('../img/purple-sm.jpeg');
+	background-image: url('../img/purple-sm-2.jpeg');
 	background-size: cover;
 	background-attachment: fixed;
 	z-index: 1;
@@ -239,6 +286,7 @@ header::after {
 	i {
 		padding: 10px;
 		font-size: 20px;
+		color: $main-color;
 	}
 	p {
 		padding: 10px;
@@ -246,6 +294,11 @@ header::after {
 	}
 	.section-title {
 		color: $main-color;
+	}
+	.footer {
+		position: absolute;
+		bottom: 0;
+		font-size: 10px;
 	}
 }
 .contact::after {
@@ -282,11 +335,40 @@ header::after {
 		}
 		overflow: hidden;
 	}
-	.technology {
-		background-image: url('../img/purple-big.jpeg');
+	nav {
+		.nav-link::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			height: 3px;
+			width: 100%;
+			background-color: $purple-color;
+			transform: scale(0);
+			transition: transform 0.6s;
+		}
+		.navbar-nav .nav-link:hover::after {
+			transform: scale(1);
+		}
+	}
+	.aboutus {
+		.technology {
+			background-image: url('../img/footer-big-3.jpeg');
+		}
 	}
 	.contact {
-		background-image: url('../img/purple-big.jpeg');
+		background-image: url('../img/purple-big-2.jpeg');
+		height: 600px;
+		overflow: hidden;
+	}
+	.section-title {
+		margin-bottom: 30px;
+	}
+
+	.contact__div {
+		width: 100%;
+		height: 300px;
+		padding: 80px 0px;
 	}
 }
 
@@ -304,6 +386,15 @@ header::after {
 			font-size: 28px;
 			letter-spacing: 2px;
 			text-shadow: 0px 4px 9px #040404;
+		}
+	}
+	.portfolio {
+		&__desc {
+			width: 45%;
+		}
+
+		&__card {
+			width: 45%;
 		}
 	}
 }
