@@ -235,7 +235,7 @@ header::after {
   background-image: url("../img/restaurant-sm.jpeg");
 }
 .portfolio__card--three {
-  background-image: url("../img/free-sm.jpg");
+  background-image: url("../img/free-sm.jpeg");
 }
 
 .prices .card {
@@ -262,7 +262,7 @@ header::after {
 }
 .prices .card-active {
   transform: scale(1.02);
-  background-image: url("../img/purple-sm.jpeg");
+  background-color: rgb(64, 89, 100);
   background-size: cover;
   color: white;
 }
@@ -300,6 +300,10 @@ header::after {
   position: absolute;
   bottom: 0;
   font-size: 10px;
+}
+.contact .footer a {
+  color: #b8b8b8;
+  text-decoration: none;
 }
 
 .contact::after {
