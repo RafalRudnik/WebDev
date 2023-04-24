@@ -147,7 +147,11 @@ header::after {
 }
 
 .aboutus .about-desc {
+  line-height: 2em;
   color: #4b4a4a;
+}
+.aboutus .aboutus-overview {
+  line-height: 2em;
 }
 .aboutus i {
   font-size: 60px;
@@ -201,8 +205,20 @@ header::after {
   z-index: 0;
 }
 .portfolio__desc {
+  position: relative;
   align-self: flex-start;
   width: 100%;
+  line-height: 2em;
+}
+.portfolio__desc::after {
+  position: absolute;
+  content: "";
+  top: -10px;
+  left: -10px;
+  width: 10%;
+  height: 30%;
+  background-color: rgba(94, 23, 217, 0.373);
+  z-index: -2;
 }
 .portfolio__card {
   position: relative;
@@ -212,23 +228,14 @@ header::after {
   height: 400px;
   background-image: url("../img/transport-sm.jpeg");
   background-position: center;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .portfolio__card--two {
   background-image: url("../img/restaurant-sm.jpeg");
 }
-.portfolio__card--two::after {
-  position: absolute;
-  content: "";
-  top: -50px;
-  left: -10px;
-  width: 40%;
-  height: 30%;
-  background-color: rgba(94, 23, 217, 0.767);
-  z-index: -2;
-}
 .portfolio__card--three {
-  background-image: url("../img/free-sm.jpeg");
+  background-image: url("../img/free-sm.jpg");
 }
 
 .prices .card {
@@ -304,6 +311,10 @@ header::after {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: -1;
+}
+
+.contact__div {
+  height: 60vh;
 }
 
 @media (min-width: 992px) {
