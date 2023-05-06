@@ -366,6 +366,7 @@ header::after {
   }
   nav .flag-img {
     padding: 0;
+    width: 70%;
   }
   .aboutus .technology {
     background-image: url("../img/footer-big-3.jpeg");
