@@ -17,3 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	allLinks.forEach((link) => link.addEventListener('click', closeBurger));
 	window.addEventListener('scroll', addShadow);
 });
+
+const portf = document.querySelector('.portfolio:nth-child(3)');
+
+console.log(portf);
